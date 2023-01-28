@@ -24,7 +24,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
   Future<void> checkAndUpdateAuthStatus() async {
     state = (await _authenticator.isSignedIn())
         ? const AuthState.authenticated()
-        : const AuthState.authenticated();
+        : const AuthState.unauthenticated();
   }
 
   Future<void> signIn(AuthUriCallback authorizationCallback) async {

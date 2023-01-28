@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:oauth2/src/credentials.dart';
 import 'package:repo_viewer/auth/infrastructure/credentials_storage/credentials_storage.dart';
